@@ -63,8 +63,8 @@ def main():
     sqSelected = ()  # starts empty since no square has been selected keeps track of last square user clicked on
     playerClicks = []  # keeps track of user clicks (two tuples : [(3,5), (3,7)])
     gameOver = False
-    player1 = False# if human is playing white this will be True, if its an ai playing white then false
-    player2 = False  # same as above but for black
+    player1 = True # WHITE | if human is playing white this will be True, if its an ai playing white then false
+    player2 = False  # BLACK | same as above
     while running:
         humanTurn = (gs.whitetomove and player1) or (not gs.whitetomove and player2)
         for e in p.event.get():
