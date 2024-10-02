@@ -16,7 +16,14 @@ pieceValue = {
 }
 checkmate = 1000
 stalemate = 0
+#IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+#IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+
 DEPTH = 10
+#above is the amount of moves ahead the chess ai will look, so if you 
+#adjust it too high it will take longer to run based off your pcs specs
+#IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+#IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
 
 def findRandomMove(validMoves):  # gets a random move
     return validMoves[random.randint(0, len(validMoves) - 1)]
