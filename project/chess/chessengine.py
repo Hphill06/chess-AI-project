@@ -1,7 +1,6 @@
 '''
 this class stores info about the chessgame, all info about the chess game
 knows what moves are legal and not legal, also keeps a log
-part 8 and beyond for changing to advanced check
 '''
 
 import numpy as np
@@ -18,18 +17,7 @@ class gamestate():
         # board is 8*8 2d numpy array
         # first char repersents the color of the piece, second charachter is the type of piece
         # "--" = empty space
-        '''
-        self.board = np.array([
-                    ["bR","bN","bB","bQ","bK","bB","bN","bR"],
-                    ["bp","bp","bp","bp","bp","bp","bp","bp"],
-                    ["--","--","--","--","--","bQ","--","--"],
-                    ["--","--","bB","--","--","--","--","--"],
-                    ["--","--","--","--","--","--","--","--"],
-                    ["--","--","--","--","--","--","--","--"],
-                    ["wp","wp","wp","wp","wp","wp","wp","wp"],
-                    ["wR","wN","wB","wQ","wK","wB","wN","wR"],
-                    ])
-        '''
+       
         self.board = np.array([
             ["bR", "bN", "bB", "bQ", "bK", "bB", "bN", "bR"],
             ["bp", "bp", "bp", "bp", "bp", "bp", "bp", "bp"],
